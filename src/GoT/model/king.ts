@@ -1,11 +1,12 @@
 import { Character } from './character';
 
 export class King extends Character {
-  years: number;
+  kingdomYears: number;
 
   constructor(name: string, family: string, age: number, years: number) {
     super(name, family, age);
-    this.years = years;
-    this.personalQuote = 'Vais a morir todos';
+    this.message = 'Vais a morir todos';
+    this.kingdomYears = years;
+    this.category = 'Kings';
   }
 }

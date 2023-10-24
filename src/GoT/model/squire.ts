@@ -10,11 +10,12 @@ export class Squire extends Character {
     family: string,
     age: number,
     servilityGrade: number,
-    patron = Fighter
+    patron: Fighter
   ) {
     super(name, family, age);
+    this.category = 'Squire';
     this.patron = patron;
+    this.message = 'Soy un loser';
     this.servilityGrade = servilityGrade;
-    this.personalQuote = 'Soy un loser';
   }
 }

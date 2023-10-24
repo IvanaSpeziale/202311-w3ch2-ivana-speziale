@@ -1,4 +1,3 @@
-/* eslint-disable max-params */
 import { Character } from './character';
 
 export class Fighter extends Character {
@@ -13,8 +12,9 @@ export class Fighter extends Character {
     skill: number
   ) {
     super(name, family, age);
+    this.message = 'Primero pego y luego pregunto';
+    this.category = 'Figther';
     this.weapon = weapon;
     this.skill = skill;
-    this.personalQuote = 'Primero pego y luego pregunto';
   }
 }
