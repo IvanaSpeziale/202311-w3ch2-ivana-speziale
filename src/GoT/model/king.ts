@@ -7,6 +7,6 @@ export class King extends Character {
     super(name, family, age);
     this.message = 'Vais a morir todos';
     this.kingdomYears = years;
-    this.category = 'Kings';
+    this.category = 'King';
   }
 }

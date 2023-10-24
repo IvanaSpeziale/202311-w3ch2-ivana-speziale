@@ -7,7 +7,7 @@ export abstract class Character {
   isAlive: boolean;
 
   protected message: string;
-  category!: 'King' | 'Figther' | 'Advisor' | 'Squire';
+  category!: 'King' | 'Fighter' | 'Advisor' | 'Squire';
 
   constructor(name: string, family: string, age: number) {
     this.name = name;
