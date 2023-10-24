@@ -1,0 +1,47 @@
+{
+  "name": "202310-w3ch2-ivana-speziale",
+  "version": "1.0.0",
+  "description": "Segundo challenge de la tercera semana de bootcamp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass scss:css -w --no-source-map",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --watchAll --coverage",
+    "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
+    "prepare": "husky install",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "babel": "^6.23.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^1.0.1",
+    "husky": "^8.0.0",
+    "jest": "^29.7.0",
+    "sass": "^1.69.4",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.5"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
