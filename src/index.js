@@ -51,7 +51,7 @@ for (const iterator of characters) {
                   : String
               }</li>
               <li>Sirve a: ${
-                characters instanceof Squire ? characters.patron.name : patron
+                characters instanceof Squire ? characters.patron.name : String
               }</li>
             </ul>
               <div class="character__actions">
