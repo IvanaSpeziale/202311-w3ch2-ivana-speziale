@@ -1,4 +1,8 @@
 import { repo } from './GoT/data/repo.js';
+import { Advisor } from './GoT/model/advisor.js';
+import { Fighter } from './GoT/model/fighter.js';
+import { King } from './GoT/model/king.js';
+import { Squire } from './GoT/model/squire.js';
 import './src/css/style.css';
 
 const characters = repo();
@@ -29,13 +33,27 @@ for (const iterator of characters) {
             </div>
             <div class="character__overlay">
               <ul class="list-unstyled">
-                <li>Años de reinado: X</li>
-                <li>Arma: XXX</li>
-                <li>Destreza: X</li>
-                <li>Peloteo: X</li>
-                <li>Asesora a: X</li>
-                <li>Sirve a: X</li>
-              </ul>
+              <li>Años de reinado: ${
+                characters instanceof King ? characters.kingdomYears : Number
+              }</li>
+              <li>Arma: ${
+                characters instanceof Fighter ? characters.weapon : String
+              }</li>
+              <li>Destreza: ${
+                characters instanceof Fighter ? characters.skill : Number
+              }</li>
+              <li>Peloteo: ${
+                characters instanceof Advisor ? characters.comunicar() : String
+              }</li>
+              <li>Asesora a: ${
+                characters instanceof Advisor
+                  ? characters.advisorBoss.name
+                  : String
+              }</li>
+              <li>Sirve a: ${
+                characters instanceof Squire ? characters.patron.name : patron
+              }</li>
+            </ul>
               <div class="character__actions">
                 <button class="character__action btn">habla</button>
                 <button class="character__action btn">muere</button>

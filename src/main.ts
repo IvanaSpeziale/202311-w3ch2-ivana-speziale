@@ -1,5 +1,8 @@
+import { Character } from './GoT/model/character';
+import { card } from './cards';
+
 function main() {
-  console.log('Loaded Main :)');
+  card(Character);
 }
 
 main();
