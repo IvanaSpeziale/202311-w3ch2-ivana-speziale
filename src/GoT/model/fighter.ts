@@ -13,7 +13,7 @@ export class Fighter extends Character {
   ) {
     super(name, family, age);
     this.message = 'Primero pego y luego pregunto';
-    this.category = 'Figther';
+    this.category = 'Fighter';
     this.weapon = weapon;
     this.skill = skill;
   }
